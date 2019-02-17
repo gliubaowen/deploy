@@ -9,14 +9,14 @@
 # Notes:       
 # -------------------------------------------------------------------------------
 
-#geode-gfsh命令地址
-gfsh='/usr/local/apache-geode-1.2.0/bin/gfsh'
-
-#gfsh-conn
-connect='connect'
-
 #配置文件
 appNameConfig='/opt/app/appName.properties'
 
+#software_path
+software_path='/root/software'
+
+#install_path
+install_path='/usr/local'
+
 #日志目录
-logdir='/opt/logs/CFM'
+log_dir='/opt/logs/deploy'
