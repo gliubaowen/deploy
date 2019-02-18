@@ -2,7 +2,7 @@
 # -------------------------------------------------------------------------------
 # Filename:    common-constants 
 # Version:     2.0
-# Date:        2018-11-20
+# Date:        2019-02-18
 # Author:      LiuBaoWen
 # Email:       bwliush@cn.ibm.com
 # Description: 
@@ -17,6 +17,9 @@ software_path='/root/software'
 
 #install_path
 install_path='/usr/local'
+
+#profile
+profile='/etc/profile'
 
 #日志目录
 log_dir='/opt/logs/deploy'

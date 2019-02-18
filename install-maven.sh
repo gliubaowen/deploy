@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------------
 # Filename:    install-maven.sh
 # Version:     1.0
-# Date:        2019-02-14
+# Date:        2019-02-18
 # Author:      LiuBaoWen
 # Email:       bwliush@cn.ibm.com
 # Description: 安装maven
@@ -19,4 +19,3 @@ workspaces=$(dirname "$0")
 
 tar zxvf ${software_path}/apache-maven-3.6.0-bin.tar.gz -C ${install_path}/
 
-/usr/local/apache-maven-3.6.0
