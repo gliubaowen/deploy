@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------------
 # Filename:    clearlog.sh 
 # Version:     1.1
-# Date:        2018-11-20
+# Date:        2019-02-18
 # Author:      LiuBaoWen
 # Email:       bwliush@cn.ibm.com
 # Description: 清除日志文件
@@ -18,7 +18,7 @@ CURRENTDATE=$(date +%Y-%m-%d)
 #当前系统时间戳
 TIMESTAMP=$(date +%s)
 #配置文件
-PROPERTIES=clearlog.conf
+PROPERTIES=logdir.conf
 #过期天数
 DAY_TIME=27
 
@@ -47,15 +47,15 @@ check_conf()
 check_dir()
 {
 	if [ -f $PROPERTIES ] ; then
-		echo "[success] file: $PROPERTIES existing"
+		echo "[success] file: $PROPERTIES exist"
 	else
-		echo "[error]   file: $PROPERTIES not existing"
+		echo "[error]   file: $PROPERTIES not exist"
 		exit 1
 	fi
 }
 
 #删除日志文件
-deletelog()
+delete_log()
 {
 	cd $dir
 	echo "[info] 清理目录 `pwd` 开始"
@@ -96,7 +96,7 @@ main()
 			echo "[error] 目录: $dir 不存在"
 			continue
 		fi
-		deletelog
+		delete_log
 	done
 
 	echo -e "[info]####################清理日志文件结束###################\n\n"
