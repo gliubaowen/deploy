@@ -12,6 +12,11 @@
 # -------------------------------------------------------------------------------
 
 #工作空间
+workspaces=$(dirname "$0")
+
+. ${workspaces}/common-constants
+
+#工作空间
 WORKSPACE=/root
 #当前系统时间
 CURRENTDATE=$(date +%Y-%m-%d)
