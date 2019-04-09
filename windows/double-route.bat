@@ -2,7 +2,7 @@
 REM 声明采用UTF-8编码
 chcp 65001
 
-echo modify route 测试
+echo modify route
 
 pause
 
