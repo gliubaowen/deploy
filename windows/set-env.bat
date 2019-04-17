@@ -2,6 +2,8 @@
 REM 声明采用UTF-8编码
 chcp 65001
 
+setlocal
+
 echo 设置系统环境变量开始
 
 set BAT_HOME="D:\01.我的资料\06.Project\liqun\project\deploy\windows"

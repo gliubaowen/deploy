@@ -2,6 +2,8 @@
 REM 声明采用UTF-8编码
 chcp 65001
 
+setlocal
+
 echo create lnk
 echo 正在创建桌面快捷方式，请勿关闭本窗口.
 

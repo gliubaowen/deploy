@@ -2,6 +2,8 @@
 REM 声明采用UTF-8编码
 chcp 65001
 
+setlocal
+
 echo 修改路由表开始
 
 pause
