@@ -11,7 +11,7 @@ set Program=D:\Workspace\eclipse\eclipse-jee-2019-03-R-win32-x86_64\eclipse.exe
 set LnkName="eclipse jee"
  
 ::设置程序的工作路径，一般为程序主目录，此项若留空，脚本将自行分析路径
-set WorkDir=%~dp0
+set WorkDir=
  
 ::设置快捷方式显示的说明（可选）
 set Desc=eclipse jee
@@ -23,7 +23,7 @@ start %~dp0\makelnk.vbs %LnkName% %Program% %WorkDir% %Desc%
 echo 桌面快捷方式创建成功！ 
 
 exit
-goto :eof
+
 :GetWorkDir
 set WorkDir=%~dp1
 set WorkDir=%WorkDir:~,-1%
