@@ -20,6 +20,7 @@ set "XftpPortable_LnkName=XftpPortable"
 set "PanDownload_LnkName=PanDownload"
 set "VeraCrypt-x64_LnkName=VeraCrypt-x64"
 set "FeiQ_LnkName=FeiQ"
+set "MobaXterm_LnkName=MobaXterm"
 
 ::设置程序或文件的完整路径（必选）
 set "eclipse_Program=D:\Workspace\eclipse\eclipse-jee-2019-03-R-win32-x86_64\eclipse.exe"
@@ -35,6 +36,7 @@ set "XftpPortable_Program=D:\Workspace\tools\XshellXftpPortable\XftpPortable.exe
 set "PanDownload_Program=D:\Workspace\tools\PanDownload\PanDownload.exe"
 set "VeraCrypt-x64_Program=D:\Workspace\VeraCrypt\VeraCrypt-x64.exe"
 set "FeiQ_Program=D:\Workspace\tools\FeiQ.exe"
+set "MobaXterm_Program=D:\Workspace\tools\MobaXterm_Portable_v11.1\MobaXterm.exe"
 
 ::设置程序的工作路径，一般为程序主目录，此项若留空，脚本将自行分析路径
 set WorkDir=
@@ -70,6 +72,8 @@ call:GetWorkDir "%VeraCrypt-x64_Program%"
 start %~dp0\makelnk.vbs "%VeraCrypt-x64_LnkName%" "%VeraCrypt-x64_Program%" "%WorkDir%" %Desc%
 call:GetWorkDir "%FeiQ_Program%"
 start %~dp0\makelnk.vbs "%FeiQ_LnkName%" "%FeiQ_Program%" "%WorkDir%" %Desc%
+call:GetWorkDir "%MobaXterm_Program%"
+start %~dp0\makelnk.vbs "%MobaXterm_LnkName%" "%MobaXterm_Program%" "%WorkDir%" %Desc%
 
 echo 桌面快捷方式创建成功！ 
 

@@ -6,7 +6,7 @@ setlocal
 
 echo 设置系统环境变量开始
 
-set BAT_HOME="D:\01.Resources\06.Project\liqun\project\deploy\windows"
+set BAT_HOME="D:\01.Resources\06.Project\liqun\project\deploy\windows\bat"
 
 set JAVA_HOME="D:\Workspace\jdk\jdk1.8.0_181"
 set classpath=".;"
