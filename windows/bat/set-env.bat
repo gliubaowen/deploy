@@ -7,6 +7,7 @@ setlocal
 echo 设置系统环境变量开始
 
 set BAT_HOME="D:\01.Resources\06.Project\liqun\project\deploy\windows\bat"
+set PS1_HOME="D:\01.Resources\06.Project\liqun\project\deploy\windows\ps1"
 
 set JAVA_HOME="D:\Workspace\jdk\jdk1.8.0_181"
 set classpath=".;"
@@ -29,7 +30,7 @@ setx CATALINA_HOME %CATALINA_HOME% -m
 setx H2_HOME %H2_HOME% -m
 setx NLS_LANG %NLS_LANG% -m
 
-setx path "%path%;%%JAVA_HOME%%\bin;%%GIT_HOME%%\bin;%%MAVEM_HOME%%\bin;%%GRADLE_HOME%%\bin;%%TOMCAT_HOME%%\bin;%%H2_HOME%%\bin;C:\Program Files\TortoiseSVN\bin;%%BAT_HOME%%" -m
+setx path "%path%;%%JAVA_HOME%%\bin;%%GIT_HOME%%\bin;%%MAVEM_HOME%%\bin;%%GRADLE_HOME%%\bin;%%TOMCAT_HOME%%\bin;%%H2_HOME%%\bin;C:\Program Files\TortoiseSVN\bin;%%BAT_HOME%%;%%PS1_HOME%%" -m
 
 echo 设置系统环境变量成功
 

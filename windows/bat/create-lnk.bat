@@ -34,7 +34,7 @@ set "aida64_Program=D:\Workspace\tools\aida64extreme_v4577\aida64.exe"
 set "XshellPortable_Program=D:\Workspace\tools\XshellXftpPortable\XshellPortable.exe"
 set "XftpPortable_Program=D:\Workspace\tools\XshellXftpPortable\XftpPortable.exe"
 set "PanDownload_Program=D:\Workspace\tools\PanDownload\PanDownload.exe"
-set "VeraCrypt-x64_Program=D:\Workspace\VeraCrypt\VeraCrypt-x64.exe"
+set "VeraCrypt-x64_Program=D:\Workspace\tools\VeraCrypt\VeraCrypt-x64.exe"
 set "FeiQ_Program=D:\Workspace\tools\FeiQ.exe"
 set "MobaXterm_Program=D:\Workspace\tools\MobaXterm_Portable_v11.1\MobaXterm.exe"
 
