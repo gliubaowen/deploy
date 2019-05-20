@@ -1,13 +1,11 @@
-@echo off
-REM 声明采用UTF-8编码
 chcp 65001
 
-setlocal
+Write-Host $(Get-Date)  关闭BitLocker分区开始 
 
-echo 关闭BitLocker分区开始 
+$driver=$args+":"
 
-manage-bde -lock %1:
+manage-bde -lock $driver
 
-echo 关闭BitLocker分区完成
+Write-Host $(Get-Date)  关闭BitLocker分区完成
 
 pause

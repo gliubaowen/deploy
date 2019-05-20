@@ -1,37 +1,42 @@
-@echo off
-REM 声明采用UTF-8编码
+# 声明采用UTF-8编码
 chcp 65001
 
-setlocal
+Write-Host $(Get-Date) 设置系统环境变量开始
 
-echo 设置系统环境变量开始
+$PS1_HOME="D:\01.Resources\06.Project\liqun\project\deploy\windows\ps1"
+$BAT_HOME="D:\01.Resources\06.Project\liqun\project\deploy\windows\bat"
 
-set BAT_HOME="D:\01.Resources\06.Project\liqun\project\deploy\windows\bat"
-set PS1_HOME="D:\01.Resources\06.Project\liqun\project\deploy\windows\ps1"
+$JAVA_HOME="D:\Workspace\jdk\jdk1.8.0_181"
+$classpath=".;"
+$GIT_HOME="D:\Workspace\PortableGit"
+$MAVEM_HOME="D:\Workspace\apache-maven-3.5.4"
+$GRADLE_HOME="D:\Workspace\gradle-4.8.1-all\gradle-4.8.1"
+$TOMCAT_HOME="D:\Workspace\apache-tomcat-7.0.92"
+$CATALINA_HOME="D:\Workspace\apache-tomcat-7.0.92"
+$H2_HOME="D:\Workspace\h2"
+$NLS_LANG="SIMPLIFIED CHINESE_CHINA.AL32UTF8"
 
-set JAVA_HOME="D:\Workspace\jdk\jdk1.8.0_181"
-set classpath=".;"
-set GIT_HOME="D:\Workspace\PortableGit"
-set MAVEM_HOME="D:\Workspace\apache-maven-3.5.4"
-set GRADLE_HOME="D:\Workspace\gradle-4.8.1-all\gradle-4.8.1"
-set TOMCAT_HOME="D:\Workspace\apache-tomcat-7.0.92"
-set CATALINA_HOME="D:\Workspace\apache-tomcat-7.0.92"
-set H2_HOME="D:\Workspace\h2"
-set NLS_LANG="SIMPLIFIED CHINESE_CHINA.AL32UTF8"
+#系统默认path变量值
+$env_path="%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\"
 
-setx BAT_HOME %BAT_HOME% -m
-setx JAVA_HOME %JAVA_HOME% -m
-setx classpath %classpath% -m
-setx GIT_HOME %GIT_HOME% -m
-setx MAVEM_HOME %MAVEM_HOME% -m
-setx MAVEM_HOME %MAVEM_HOME% -m
-setx TOMCAT_HOME %TOMCAT_HOME% -m
-setx CATALINA_HOME %CATALINA_HOME% -m
-setx H2_HOME %H2_HOME% -m
-setx NLS_LANG %NLS_LANG% -m
+#扩展path变量值
+$env_ext_path=$env_path+";%JAVA_HOME%\bin;%GIT_HOME%\bin;%MAVEM_HOME%\bin;%GRADLE_HOME%\bin;%TOMCAT_HOME%\bin;%H2_HOME%\bin;C:\Program Files\TortoiseSVN\bin;%PS1_HOME%;%BAT_HOME%"
 
-setx path "%path%;%%JAVA_HOME%%\bin;%%GIT_HOME%%\bin;%%MAVEM_HOME%%\bin;%%GRADLE_HOME%%\bin;%%TOMCAT_HOME%%\bin;%%H2_HOME%%\bin;C:\Program Files\TortoiseSVN\bin;%%BAT_HOME%%;%%PS1_HOME%%" -m
+[environment]::SetEnvironmentvariable("BAT_HOME", $BAT_HOME, "machine")
+[environment]::SetEnvironmentvariable("PS1_HOME", $PS1_HOME, "machine")
 
-echo 设置系统环境变量成功
+[environment]::SetEnvironmentvariable("JAVA_HOME", $JAVA_HOME, "machine")
+[environment]::SetEnvironmentvariable("classpath", $classpath, "machine")
+[environment]::SetEnvironmentvariable("GIT_HOME", $GIT_HOME, "machine")
+[environment]::SetEnvironmentvariable("MAVEM_HOME", $MAVEM_HOME, "machine")
+[environment]::SetEnvironmentvariable("GRADLE_HOME", $GRADLE_HOME, "machine")
+[environment]::SetEnvironmentvariable("TOMCAT_HOME", $TOMCAT_HOME, "machine")
+[environment]::SetEnvironmentvariable("CATALINA_HOME", $CATALINA_HOME, "machine")
+[environment]::SetEnvironmentvariable("H2_HOME", $H2_HOME, "machine")
+[environment]::SetEnvironmentvariable("NLS_LANG", $NLS_LANG, "machine")
+
+[environment]::SetEnvironmentvariable("path", $env_ext_path, "machine")
+
+Write-Host $(Get-Date) 设置系统环境变量成功
 
 pause
