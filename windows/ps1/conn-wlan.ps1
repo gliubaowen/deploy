@@ -25,12 +25,12 @@ Netsh WLAN ?
 Netsh WLAN connect
 Netsh WLAN show profile
 Netsh WLAN connect
-Netsh WLAN set profileparameter name="NeiWang" connectionmode=manual
-Netsh WLAN set profileparameter name="LQ_Office_WiFi" connectionmode=auto
 #>
 
 Netsh WLAN connect name=NeiWang ssid=NeiWang interface="WLAN"
 Netsh WLAN connect name=LQ_Office_WiFi ssid=LQ_Office_WiFi interface="WLAN 2"
+Netsh WLAN set profileparameter name="NeiWang" connectionmode=auto
+Netsh WLAN set profileparameter name="LQ_Office_WiFi" connectionmode=auto
 
 #查看命令结果中的一列
 #(history).CommandLine
