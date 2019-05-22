@@ -20,7 +20,7 @@ $NLS_LANG="SIMPLIFIED CHINESE_CHINA.AL32UTF8"
 $env_path="%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\"
 
 #扩展path变量值
-$env_ext_path=$env_path+";%JAVA_HOME%\bin;%GIT_HOME%\bin;%MAVEM_HOME%\bin;%GRADLE_HOME%\bin;%TOMCAT_HOME%\bin;%H2_HOME%\bin;C:\Program Files\TortoiseSVN\bin;%PS1_HOME%;%BAT_HOME%"
+$env_ext_path=$env_path+";%JAVA_HOME%\bin;%GIT_HOME%\bin;%MAVEM_HOME%\bin;%GRADLE_HOME%\bin;%TOMCAT_HOME%\bin;%H2_HOME%\bin;C:\Program Files\TortoiseSVN\bin;%PS1_HOME%"
 
 [environment]::SetEnvironmentvariable("BAT_HOME", $BAT_HOME, "machine")
 [environment]::SetEnvironmentvariable("PS1_HOME", $PS1_HOME, "machine")
