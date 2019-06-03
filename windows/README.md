@@ -13,5 +13,3 @@
 	(8).explorer
 2.double-route.bat & set-env.bat 需要管理员权限
 3.set-env.bat 设置path环境变量时 会把%path%解析成字符 需要完善
-4.添加获取管理员权限的脚本
-5.用powershell重写所有功能
