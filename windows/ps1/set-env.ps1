@@ -15,6 +15,7 @@ $TOMCAT_HOME="D:\Workspace\apache-tomcat-7.0.92"
 $CATALINA_HOME="D:\Workspace\apache-tomcat-7.0.92"
 $H2_HOME="D:\Workspace\h2"
 $NLS_LANG="SIMPLIFIED CHINESE_CHINA.AL32UTF8"
+$GRADLE_USER_HOME="D:\Workspace\.gradle"
 
 #系统默认path变量值
 $env_path="%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\"
@@ -34,6 +35,7 @@ $env_ext_path=$env_path+";%JAVA_HOME%\bin;%GIT_HOME%\bin;%MAVEM_HOME%\bin;%GRADL
 [environment]::SetEnvironmentvariable("CATALINA_HOME", $CATALINA_HOME, "machine")
 [environment]::SetEnvironmentvariable("H2_HOME", $H2_HOME, "machine")
 [environment]::SetEnvironmentvariable("NLS_LANG", $NLS_LANG, "machine")
+[environment]::SetEnvironmentvariable("GRADLE_USER_HOME", $GRADLE_USER_HOME, "machine")
 
 [environment]::SetEnvironmentvariable("path", $env_ext_path, "machine")
 
