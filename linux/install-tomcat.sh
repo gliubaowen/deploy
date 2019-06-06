@@ -17,5 +17,5 @@ workspaces=$(dirname "$0")
 
 . ${workspaces}/common-constants
 
-tar zxvf ${software_path}/apache-maven-3.6.0-bin.tar.gz -C ${install_path}/
+tar zxvf ${software_path}/apache-tomcat-8.0.36.tar.gz -C ${install_path}/
 

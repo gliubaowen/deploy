@@ -24,8 +24,8 @@ echo 'JAVA_HOME=/usr/local/jdk1.8.0_202' >> $profile
 echo 'M2_HOME=/usr/local/apache-maven-3.6.0' >> $profile
 
 #tomcat
-echo 'TOMCAT_HOME=/usr/local/apache-maven-3.6.0' >> $profile
-echo 'CATALINA_HOME=/usr/local/apache-maven-3.6.0' >> $profile
+echo 'TOMCAT_HOME=/usr/local/apache-tomcat-8.0.36' >> $profile
+echo 'CATALINA_HOME=/usr/local/apache-tomcat-8.0.36' >> $profile
 
 #path
 echo 'PATH=$PATH:$JAVA_HOME/bin:$M2_HOME/bin:$TOMCAT_HOME/bin' >> $profile
