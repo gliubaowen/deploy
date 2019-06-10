@@ -17,6 +17,8 @@ workspaces=$(dirname "$0")
 
 . ${workspaces}/common-constants
 
+echo >> $profile
+
 #jdk
 echo 'JAVA_HOME=/usr/local/jdk1.8.0_202' >> $profile
 
@@ -29,5 +31,7 @@ echo 'CATALINA_HOME=/usr/local/apache-tomcat-8.0.36' >> $profile
 
 #path
 echo 'PATH=$PATH:$JAVA_HOME/bin:$M2_HOME/bin:$TOMCAT_HOME/bin' >> $profile
+
+echo >> $profile
 
 source $profile
