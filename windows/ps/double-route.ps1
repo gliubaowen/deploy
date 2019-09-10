@@ -9,13 +9,16 @@ route print
 
 pause
 
+# 删除默认路由
 route delete 0.0.0.0
 
-# 添加内外网路由
-route add 10.0.0.0 mask 255.0.0.0 128.192.218.254 -p 
-route add 0.0.0.0 mask 0.0.0.0 10.10.255.254 -p 
+# 添加特定网络路由
+route add 20.0.0.0 mask 255.0.0.0 20.2.134.254 -p 
+# 添加默认网络路由
+route add 0.0.0.0 mask 0.0.0.0 192.168.43.129 -p 
 
-route delete 0.0.0.0 128.192.218.254
+# 删除特定网络默认 一般不需要 
+#route delete 0.0.0.0 128.192.218.254
 
 route print
 

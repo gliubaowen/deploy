@@ -3,8 +3,8 @@ chcp 65001
 
 Write-Host $(Get-Date) 设置系统环境变量开始
 
-$PS_HOME="D:\01.Resources\06.Project\liqun\project\deploy\windows\ps"
-$BAT_HOME="D:\01.Resources\06.Project\liqun\project\deploy\windows\bat"
+$PS_HOME="D:\01.Resources\06.Project\myproject\deploy\windows\ps"
+$BAT_HOME="D:\01.Resources\06.Project\myproject\deploy\windows\bat"
 
 $JAVA_HOME="D:\Workspace\jdk\jdk1.8.0_181"
 $IBM_JAVA_PATH="C:\ProgramData\Oracle\Java\javapath"
