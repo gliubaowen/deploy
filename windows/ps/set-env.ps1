@@ -1,5 +1,5 @@
 # 声明采用UTF-8编码
-#在华为云系统 win7下会导致powershell停止运行
+# 在华为云系统 win7下会导致powershell停止运行
 chcp 65001
 
 Write-Host $(Get-Date) 设置系统环境变量开始
@@ -21,10 +21,10 @@ $NLS_LANG="SIMPLIFIED CHINESE_CHINA.AL32UTF8"
 $GRADLE_USER_HOME="D:\Workspace\.gradle"
 
 # %USERPROFILE%\AppData\Local\Microsoft\WindowsApps
-#系统默认path变量值
+# 系统默认path变量值
 $env_path="%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\"
 
-#扩展path变量值
+# 扩展path变量值
 $env_ext_path=$env_path+";%JAVA_HOME%\bin;%GIT_HOME%\bin;%MAVEM_HOME%\bin;%GRADLE_HOME%\bin;%TOMCAT_HOME%\bin;%H2_HOME%\bin;C:\Program Files\TortoiseSVN\bin;%PS_HOME%;%BASH_HOME%"
 
 [environment]::SetEnvironmentvariable("BAT_HOME", $BAT_HOME, "machine")
