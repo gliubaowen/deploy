@@ -21,3 +21,5 @@ workspaces=$(dirname "$0")
 #maven
 #tomcat
 
+echo "Hello Deploy"
+

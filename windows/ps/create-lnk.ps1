@@ -81,6 +81,8 @@ CreateLnk $VeraCrypt_x64_Program
 CreateLnk $FeiQ_Program
 CreateLnk $MobaXterm_Program
 
+#复制快捷方式到 C:\ProgramData\Microsoft\Windows\Start Menu\Programs 可以添加到开始菜单
+
 Write-Host $(Get-Date) 创建桌面快捷方式完成.
 
 pause
