@@ -1,3 +1,13 @@
+<#
+# Filename:    set-ps.ps1 
+# Version:     0.0.1
+# Date:        2019-10-16
+# Author:      LiuBaoWen
+# Email:       bwliush@cn.ibm.com
+# Description: 设置Powershell
+# Notes:    
+#>
+
 # 声明采用UTF-8编码
 
 Write-Host $(Get-Date) 当前脚本运行级别

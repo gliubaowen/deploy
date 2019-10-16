@@ -1,3 +1,13 @@
+<#
+# Filename:    double-route.ps1 
+# Version:     0.0.1
+# Date:        2019-10-16
+# Author:      LiuBaoWen
+# Email:       bwliush@cn.ibm.com
+# Description: 设置双网卡路由表
+# Notes:    
+#>
+
 # 声明采用UTF-8编码
 chcp 65001
 
@@ -21,6 +31,10 @@ route add 0.0.0.0 mask 0.0.0.0 192.168.43.19 -p
 #route delete 0.0.0.0 128.192.218.254
 
 route print
+
+ping baidu.com
+
+ping 20.2.137.254
 
 Write-Host $(Get-Date) 修改路由表完成
 
