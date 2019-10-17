@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # -------------------------------------------------------------------------------
-# Filename:    write-profile.sh
+# Filename:    set-profile.sh
 # Version:     1.0
-# Date:        2019-02-18
+# Date:        2019-10-17
 # Author:      LiuBaoWen
 # Email:       bwliush@cn.ibm.com
 # Description: 写入环境变量到profile
