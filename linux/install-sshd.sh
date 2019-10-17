@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # -------------------------------------------------------------------------------
-# Filename:    install-wsl-ssh.sh
-# Version:     1.0
-# Date:        2019-09-10
+# Filename:    install-sshd.sh
+# Version:     1.1
+# Date:        2019-09-17
 # Author:      LiuBaoWen
 # Email:       bwliush@cn.ibm.com
 # Description: 配置wsl下ssh服务 
