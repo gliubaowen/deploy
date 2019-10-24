@@ -23,6 +23,7 @@ $IBM_JAVA_PATH="C:\ProgramData\Oracle\Java\javapath"
 $classpath=".;"
 $GIT_HOME="D:\Workspace\PortableGit"
 $MAVEM_HOME="D:\Workspace\apache-maven-3.5.4"
+$MAVEN_OPTS="-Duser.language=zh-CN -Dfile.encoding=UTF-8"
 $GRADLE_HOME="D:\Workspace\gradle-4.8.1-all\gradle-4.8.1"
 $TOMCAT_HOME="D:\Workspace\apache-tomcat-7.0.92"
 $CATALINA_HOME="D:\Workspace\apache-tomcat-7.0.92"
@@ -45,6 +46,7 @@ $env_ext_path=$env_path+";%JAVA_HOME%\bin;%GIT_HOME%\bin;%MAVEM_HOME%\bin;%GRADL
 [environment]::SetEnvironmentvariable("classpath", $classpath, "machine")
 [environment]::SetEnvironmentvariable("GIT_HOME", $GIT_HOME, "machine")
 [environment]::SetEnvironmentvariable("MAVEM_HOME", $MAVEM_HOME, "machine")
+[environment]::SetEnvironmentvariable("MAVEN_OPTS", $MAVEN_OPTS, "machine")
 [environment]::SetEnvironmentvariable("GRADLE_HOME", $GRADLE_HOME, "machine")
 [environment]::SetEnvironmentvariable("TOMCAT_HOME", $TOMCAT_HOME, "machine")
 [environment]::SetEnvironmentvariable("CATALINA_HOME", $CATALINA_HOME, "machine")
