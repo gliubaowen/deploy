@@ -25,11 +25,12 @@ $GIT_HOME="D:\Workspace\PortableGit"
 $MAVEM_HOME="D:\Workspace\apache-maven-3.5.4"
 $MAVEN_OPTS="-Duser.language=zh-CN -Dfile.encoding=UTF-8"
 $GRADLE_HOME="D:\Workspace\gradle-4.8.1-all\gradle-4.8.1"
+$GRADLE_USER_HOME="D:\Workspace\.gradle"
+$GRADLE_OPTS="-Dfile.encoding=utf-8"
 $TOMCAT_HOME="D:\Workspace\apache-tomcat-7.0.92"
 $CATALINA_HOME="D:\Workspace\apache-tomcat-7.0.92"
 $H2_HOME="D:\Workspace\h2"
 $NLS_LANG="SIMPLIFIED CHINESE_CHINA.AL32UTF8"
-$GRADLE_USER_HOME="D:\Workspace\.gradle"
 
 # %USERPROFILE%\AppData\Local\Microsoft\WindowsApps
 # 系统默认path变量值
@@ -48,11 +49,12 @@ $env_ext_path=$env_path+";%JAVA_HOME%\bin;%GIT_HOME%\bin;%MAVEM_HOME%\bin;%GRADL
 [environment]::SetEnvironmentvariable("MAVEM_HOME", $MAVEM_HOME, "machine")
 [environment]::SetEnvironmentvariable("MAVEN_OPTS", $MAVEN_OPTS, "machine")
 [environment]::SetEnvironmentvariable("GRADLE_HOME", $GRADLE_HOME, "machine")
+[environment]::SetEnvironmentvariable("GRADLE_USER_HOME", $GRADLE_USER_HOME, "machine")
+[environment]::SetEnvironmentvariable("GRADLE_OPTS", $GRADLE_OPTS, "machine")
 [environment]::SetEnvironmentvariable("TOMCAT_HOME", $TOMCAT_HOME, "machine")
 [environment]::SetEnvironmentvariable("CATALINA_HOME", $CATALINA_HOME, "machine")
 [environment]::SetEnvironmentvariable("H2_HOME", $H2_HOME, "machine")
 [environment]::SetEnvironmentvariable("NLS_LANG", $NLS_LANG, "machine")
-[environment]::SetEnvironmentvariable("GRADLE_USER_HOME", $GRADLE_USER_HOME, "machine")
 
 [environment]::SetEnvironmentvariable("path", $env_ext_path, "machine")
 
