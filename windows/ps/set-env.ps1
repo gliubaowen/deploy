@@ -1,7 +1,7 @@
 <#
 # Filename:    set-env.ps1 
 # Version:     0.0.1
-# Date:        2019-10-16
+# Date:        2019-11-25
 # Author:      LiuBaoWen
 # Email:       bwliush@cn.ibm.com
 # Description: 设置系统全局环境变量
@@ -31,13 +31,14 @@ $TOMCAT_HOME="D:\Workspace\apache-tomcat-7.0.92"
 $CATALINA_HOME="D:\Workspace\apache-tomcat-7.0.92"
 $H2_HOME="D:\Workspace\h2"
 $NLS_LANG="SIMPLIFIED CHINESE_CHINA.AL32UTF8"
+$JMETER_HOME="D:\Workspace\apache-jmeter-5.2"
 
 # %USERPROFILE%\AppData\Local\Microsoft\WindowsApps
 # 系统默认path变量值
 $env_path="%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\"
 
 # 扩展path变量值
-$env_ext_path=$env_path+";%JAVA_HOME%\bin;%GIT_HOME%\bin;%MAVEM_HOME%\bin;%GRADLE_HOME%\bin;%TOMCAT_HOME%\bin;%H2_HOME%\bin;C:\Program Files\TortoiseSVN\bin;%PS_HOME%;%BASH_HOME%"
+$env_ext_path=$env_path+";%JAVA_HOME%\bin;%GIT_HOME%\bin;%MAVEM_HOME%\bin;%GRADLE_HOME%\bin;%TOMCAT_HOME%\bin;%H2_HOME%\bin;C:\Program Files\TortoiseSVN\bin;%PS_HOME%;%BASH_HOME%;%JMETER_HOME%\bin"
 
 [environment]::SetEnvironmentvariable("BAT_HOME", $BAT_HOME, "machine")
 [environment]::SetEnvironmentvariable("PS_HOME", $PS_HOME, "machine")
@@ -55,6 +56,7 @@ $env_ext_path=$env_path+";%JAVA_HOME%\bin;%GIT_HOME%\bin;%MAVEM_HOME%\bin;%GRADL
 [environment]::SetEnvironmentvariable("CATALINA_HOME", $CATALINA_HOME, "machine")
 [environment]::SetEnvironmentvariable("H2_HOME", $H2_HOME, "machine")
 [environment]::SetEnvironmentvariable("NLS_LANG", $NLS_LANG, "machine")
+[environment]::SetEnvironmentvariable("JMETER_HOME", $JMETER_HOME, "machine")
 
 [environment]::SetEnvironmentvariable("path", $env_ext_path, "machine")
 

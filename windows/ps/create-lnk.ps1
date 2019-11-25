@@ -1,7 +1,7 @@
 <#
 # Filename:    create-lnk.ps1 
 # Version:     0.0.1
-# Date:        2019-10-16
+# Date:        2019-11-25
 # Author:      LiuBaoWen
 # Email:       bwliush@cn.ibm.com
 # Description: 创建桌面快捷方式
@@ -54,7 +54,7 @@ $MobaXterm_LnkName="MobaXterm"
 
 #设置程序或文件的完整路径（必选）
 $eclipse_Program="D:\Workspace\eclipse\eclipse-jee-2019-03-R-win32-x86_64\eclipse.exe"
-$DiskGenius_Program="D:\Workspace\tools\DiskGenius\DiskGenius\DiskGenius.exe"
+$DiskGenius_Program="D:\Workspace\tools\DG512766_x64\DiskGenius\DiskGenius.exe"
 $plsqldev_Program="D:\Workspace\PLSQL Developer 12\plsqldev.exe"
 $AS_SSD_Benchmark_Program="D:\Workspace\tools\AS_SSD_Benchmark\AS SSD Benchmark.exe"
 $DiskMark64_Program="D:\Workspace\tools\CrystalDiskMark6_0_1\DiskMark64.exe"
