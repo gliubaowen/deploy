@@ -36,6 +36,22 @@ Function CreateLnk($Program)
     return
 }
 
+Function StartMenu($Program)
+{
+
+    $start=$Program.LastIndexOf("\")+1
+    $end=$Program.LastIndexOf(".")
+    
+    $LnkName=$Program.Substring( $start,$end-$start )
+	$WorkingDirectory=$Program.Substring( 0,$start-1 )
+	
+    $shortcut = $shell.CreateShortcut("$programs\$LnkName.lnk")
+	$shortcut.TargetPath = $Program
+	$shortcut.WorkingDirectory = $WorkingDirectory
+	$shortcut.Save()
+    return
+}
+
 #设置快捷方式名称（必选）
 $eclipse_LnkName="eclipse jee"
 $DiskGenius_LnkName="DiskGenius"
@@ -72,6 +88,7 @@ $MobaXterm_Program="D:\Workspace\tools\MobaXterm_Portable_v11.1\MobaXterm.exe"
 $shell = New-Object -ComObject WScript.Shell
 #第二步，因为我们是要在桌面创建快捷方式，那还必须得找到桌面的位置，即桌面的物理路径。
 $desktop = [System.Environment]::GetFolderPath('Desktop')
+$programs = [System.Environment]::GetFolderPath('Programs')
 
 #第三步，定义快捷方式对象，并设置相关属性。
 #最后，保存设置。
